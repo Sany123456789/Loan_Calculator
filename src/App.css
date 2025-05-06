@@ -1,0 +1,149 @@
+body {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+
+body.dark-mode .navbar {
+  background-color: #1e1e1e;
+  color: #fff;
+}
+
+.container {
+  padding: 2rem;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.inputs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.inputs input {
+  padding: 0.5rem;
+  flex: 1;
+  min-width: 200px;
+}
+
+.inputs button {
+  padding: 0.5rem 1rem;
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.emi {
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.currency-dropdown {
+  margin-top: 1rem;
+  border-radius: 5px;
+  padding: 5px 10px;
+  width: 140px;
+}
+
+.currency-dropdown label {
+  font-size: 12px;
+  color: #007bff;
+}
+
+.reset-btn {
+  background-color: white;
+  color: purple;
+  border: 1px solid purple;
+  padding: 8px 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.reset-btn:hover {
+  background-color: #f3e8ff;
+}
+
+.schedule-table {
+  width: 100%;
+  margin-top: 1rem;
+  border-collapse: collapse;
+}
+
+.schedule-table th,
+.schedule-table td {
+  border: 1px solid #ddd;
+  padding: 0.6rem;
+  text-align: center;
+}
+
+.result-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.emi-currency-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+@media (max-width: 768px) {
+  .inputs {
+    flex-direction: column;
+  }
+
+  .inputs input,
+  .inputs button {
+    width: 100%;
+  }
+
+  .result-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .reset-btn {
+    align-self: flex-start;
+  }
+
+  .currency-dropdown {
+    width: 100%;
+  }
+
+  .emi-currency-group {
+    width: 100%;
+  }
+
+  .schedule-table th,
+  .schedule-table td {
+    font-size: 0.9rem;
+    padding: 0.5rem;
+  }
+
+  .container {
+    padding: 1rem;
+  }
+}
